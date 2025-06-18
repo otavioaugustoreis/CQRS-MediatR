@@ -11,4 +11,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Application\UseCases\Commands\" />
+    <Folder Include="Application\UseCases\Queries\" />
+    <Folder Include="Domain\Entities\" />
+    <Folder Include="Infrastructure\Repository\" />
+  </ItemGroup>
+
 </Project>

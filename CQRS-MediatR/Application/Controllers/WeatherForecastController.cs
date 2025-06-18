@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace CQRS_MediatR.Controllers
+namespace CQRS_MediatR.Application.Controllers
 {
     [ApiController]
     [Route("[controller]")]
