@@ -1,24 +1,41 @@
-# 🧠 Projeto CQRS + MediatR + EF Core InMemory
+# 💸 PulsePay Gateway
 
-Este projeto demonstra como implementar **CQRS** com **MediatR** utilizando **Entity Framework Core InMemory** para simulação de banco de dados. É ideal para estudos, testes e prática de boas arquiteturas em ASP.NET Core.
-
----
-
-## 🚀 Tecnologias Utilizadas
-
-- ASP.NET Core 8
-- Entity Framework Core InMemory
-- MediatR
-- CQRS
-- FluentValidation (opcional)
-- AutoMapper (opcional)
+Um projeto de **Gateway de Pagamento** simulado, construído com foco em **Clean Architecture + CQRS**, utilizando **.NET 8**, **Entity Framework Core InMemory**, **Swagger**, **MediatR** e boas práticas de arquitetura de software.
 
 ---
 
-## 📘 Padrões de Projeto Aplicados
+## 📚 Objetivo
 
-- **CQRS**: Leitura e escrita separados em comandos e queries.
-- **Mediator (MediatR)**: Comunicação entre camadas desacoplada.
-- **Clean Architecture**: Separação por responsabilidades (Domain, Application, Infra e Presentation).
-- **Repository Pattern**: Abstração de acesso a dados.
-- **EF Core InMemory**: Banco de dados em memória, ideal para testes e simulações.
+Este projeto foi criado com fins educacionais e demonstra como construir um **Gateway de Pagamento desacoplado**, escalável e testável. O comportamento do provedor de pagamento é **simulado com mocks**, permitindo o estudo de padrões como:
+
+- Clean Architecture
+- CQRS (Command & Query Responsibility Segregation)
+- Strategy + Factory
+- Dependency Injection
+- Manipulação assíncrona com `async/await`
+- Tratamento de erros e responses padronizados
+
+---
+
+## 🧠 Tecnologias Utilizadas
+
+| Tecnologia          | Finalidade                                |
+|---------------------|--------------------------------------------|
+| ASP.NET Core 8      | Web API REST                              |
+| EF Core InMemory    | Persistência simulada                     |
+| MediatR             | Gerenciamento de comandos e queries (CQRS)|
+| Swagger / Swashbuckle | Documentação e testes de API            |
+| AutoMapper          | Mapeamento entre DTOs e Entidades         |
+
+---
+
+## 🧪 Funcionalidades Simuladas
+
+- [x] Criar pagamento
+- [x] Selecionar forma de pagamento (Pix, Cartão)
+- [x] Estratégias de pagamento com retorno fake
+- [x] Retorno padronizado (`Result<T>`)
+- [x] Persistência em memória
+- [x] Swagger para testes
+- [x] Handler para comandos e queries com MediatR
+
